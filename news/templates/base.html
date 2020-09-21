@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{% endblock %}</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: whitesmoke;
+            }
+            .container {
+                margin: 15px auto;
+                padding: 10px;
+                width: 90%;
+                max-width: 1200px;
+                border-radius: 5px;
+                border-top: 5px solid dodgerblue;
+                border-bottom: 5px solid dodgerblue;
+                background-color: white;
+                box-shadow: 0 0 4px 2px darkgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
