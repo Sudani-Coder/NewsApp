@@ -1,4 +1,5 @@
 from django.contrib import admin
-from . import models
+from news.models import Reporter, Article
 
-admin.site.register(models.Article)
+admin.site.register(Reporter)
+admin.site.register(Article)
